@@ -48,11 +48,14 @@ def page(title, desc, content):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192">
+<meta name="theme-color" content="#12142b">
 <style>{CSS}</style>
 </head>
 <body>
 <main>
-<header class="site"><a class="home" href="./">Daily Lift</a><nav><a href="privacy.html">Privacy</a><a href="mailto:jz.dailyapp@gmail.com">Contact</a></nav></header>
+<header class="site"><a class="home" href="./"><img src="icon.svg" alt="" width="28" height="28" style="vertical-align: -6px; border-radius: 22%; margin-right: 8px">Daily Lift</a><nav><a href="privacy.html">Privacy</a><a href="mailto:jz.dailyapp@gmail.com">Contact</a></nav></header>
 {content}
 <footer>Daily Lift · <a href="mailto:jz.dailyapp@gmail.com">jz.dailyapp@gmail.com</a></footer>
 </main>
